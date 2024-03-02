@@ -1,0 +1,169 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:text="MARKET BAKSO BLUE"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#1100FF"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bakso                   : "
+            android:textColor="#001AFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etBarang1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga 10.0"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayam             : "
+            android:textColor="#001AFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etBarang2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga 12.0"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayam Bakso : "
+            android:textColor="#001AFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etBarang3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga 15.0"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mie Pangsit          :"
+            android:textColor="#001AFF"
+            android:textSize="18sp"/>
+
+        <EditText
+            android:id="@+id/etBarang4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Harga 12.0"
+            android:inputType="number"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="Selamat Berbelanja"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textColor="#001AFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rbNone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="None"
+            android:textColor="#001AFF"
+            android:background="@drawable/radio_button_background"/>
+
+        <RadioButton
+            android:id="@+id/rbGold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gold"
+            android:textColor="#001AFF"
+            android:background="@drawable/radio_button_background"/>
+
+        <RadioButton
+            android:id="@+id/rbSilver"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Silver"
+            android:textColor="#001AFF"
+            android:background="@drawable/radio_button_background"/>
+
+        <RadioButton
+            android:id="@+id/rbBronze"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bronze"
+            android:textColor="#001AFF"
+            android:background="@drawable/radio_button_background"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProses"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proses"
+        android:backgroundTint="#0040FF"/>
+
+    <TextView
+        android:id="@+id/tvTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total Harga : "
+        android:textColor="#001AFF"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+</LinearLayout>
